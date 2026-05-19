@@ -6,7 +6,7 @@ function App() {
   const [message, setMessage] = React.useState("Loading...")
 
   React.useEffect(() => {
-    fetch("http://localhost:5000/api/data")
+    fetch("https://firstproject-6m2d.onrender.com/api/data")
       .then(res => res.json())
       .then(data => setMessage(data.message))
   }, [])
